@@ -1,0 +1,17 @@
+<h1>Blog List</h1>
+
+@for(blog of blogs;track blog.id){
+
+<div>
+
+    <h2>{{blog.title}}</h2>
+
+    <a [routerLink]="['/blogs',blog.slug]">
+
+View
+
+</a>
+
+</div>
+
+}
